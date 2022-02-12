@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Device</title>
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип Девайс"></a>
+      <a href="index.html"><img src="img/logo_device_black.svg" width="163" height="35" alt="Логотип Девайс"></a>
       <form action="https://echo.htmlacademy.ru" method="get">
         <input type="text" name="search">
         <button type="button">Поиск</button>
@@ -45,42 +46,155 @@
       </ul>
 
       <div>
-        <h2>Фильтр:</h2>
-      </div>
-
-      <div>
-        <h2>Сортировка:</h2>
-        <ul>
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По популярности</button></li>
-        </ul>
-        <button type="button">По возрастанию</button>
-        <button type="button">По убыванию</button>
+        <div>
+          <span>Фильтр:</span>
+        </div>
+        <div>
+          <span> Сортировка:</span>
+          <ul>
+            <li><a href="#"></a>По цене</li>
+          </ul>
+          <ul>
+            <li><a href="#"></a>По типу</li>
+          </ul>
+          <ul>
+            <li><a href="#"></a>По популярности</li>
+          </ul>
+          <ul>
+            <li><a href="#"></a></li>
+          </ul>
+          <ul>
+            <li><a href="# "></a></li>
+          </ul>
+        </div>
       </div>
 
       <section>
         <h2>Параметры фильтра</h2>
-        <fieldset>
-          <legend>Стоимость</legend>
-        </fieldset>
-        <fieldset>
-          <legend>Цвет</legend>
-        </fieldset>
-        <fieldset>
-          <legend>Bluetooth</legend>
-        </fieldset>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <div>
+              <input type="hidden" name="">
+              <input type="hidden" name="">
+              <div>
+                <button>
+                  <span>От 0</span>
+                </button>
+                <button>
+                  <span>До 5000</span>
+                </button> 
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="color" value="black" id="color-black" checked>
+                <label for="color-black">Чёрный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" value="white" id="color-white">
+                <label for="color-white">Белый</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" value="blue" id="color-blue" checked>
+                <label for="color-blue">Синий</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" value="red" id="color-red" checked>
+                <label for="color-red">Красный</label>
+              </li>
+              <li>
+                <input type="checkbox" name="color" value="rose" id="color-rose">
+                <label for="color-rose">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="Bluetooth" value="yes" checked>Есть
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="Bluetooth" value="no">Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button>Показать</button>
+      </form>
       </section>
 
       <section>
-        <h2>Каталог товаров</h2>
+        <h2>Отфильтрованные товары</h2>
+        <ul>
+          <li>
+            <a>
+              <img src="img/catalog/selfie_amateur.png" width="360" height="381" alt="Селфи-палка">
+            </a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3><a href="blank.html"></a>Любительская селфи-палка</h3>
+            <span>1100 руб.</span>
+            <span>NEW</span>
+          </li>
+
+          <li>
+            <a>
+              <img src="img/catalog/selfie_profi.png" width="360" height="381" alt="Селфи-палка">
+            </a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3><a href="blank.html"></a>Профессиональная селфи-палка</h3>
+            <span>1500 руб.</span>
+            <span>NEW</span>
+          </li>
+
+          <li><a>
+              <img src="img/catalog/selfieu_nsinkable.png" width="360" height="381" alt="Селфи-палка">
+            </a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3><a href="blank.html"></a>Непотопляемая селфи-палка</h3>
+            <span>1500 руб.</span>
+            <span>NEW</span></li>
+
+          <li><a>
+              <img src="img/catalog/selfie_follow_me.png" width="360" height="381" alt="Селфи-палка">
+            </a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3><a href="blank.html"></a>Селфи-палка "Следуй за мной"</h3>
+            <span>1900 руб.</span>
+            <span>NEW</span></li>
+        </ul>
+
+        <div>
+          <a href="#">Назад</a>
+          <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <a href="#">Вперед</a>
+        </div>
+
       </section>
 
     </main>
 
     <footer>
       <div>
-        <a href="index.html"><img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип Девайс"></a>
+        <a href="index.html"><img src="img/logo_device_yellow.svg" width="163" height="35" alt="Логотип Девайс"></a>
         <ul>
           <li><a href="blank.html">Валентин Петухов</a></li>  
           <li><a href="blank.html">Выйти</a></li>
