@@ -6,21 +6,21 @@
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
-    <header>
-      <a><img src="img/logo_device_black.svg" width="163" height="35" alt="Логотип Девайс"></a>
-      <form action="https://echo.htmlacademy.ru" method="get">
+    <header class="main-header"> 
+      <a class="logo"><img src="img/logo_device_black.svg" width="163" height="35" alt="Логотип Девайс"></a>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
         <input type="text" name="search">
         <button type="button">Поиск</button>
       </form>
-      <ul>
+      <ul class="header-top">
         <li><a href="blank.html">Войти</a></li>
         <li><a href="blank.html">Сравнить</a></li>
         <li><a href="blank.html">Корзина</a></li>
       </ul>
-      <nav>
+      <nav class="main-navigation">
         <ul>
           <li>Каталог товаров 
-            <ul>
+            <ul class="main-navigation-catalog">
               <li>Виртуальная реальность</li>
               <li>Моноподы для селфи</li>
               <li>Экшн-камеры</li>
@@ -39,18 +39,18 @@
     <main>
       <h1>Интернет-магазин Device</h1>
 
-      <section>
-        <h2>Слайдер</h2>
-        <div>
+      <section class="slider">
+        <h2 class="hidden">Слайдер</h2>
+        <div class="slides">
           
-          <div>
+          <div class="slide-image">
             <img src="img/slide_copter.png" width="526" height="334" alt="Квадрокоптер.">
           </div>
-          <div>
-            <p>Порхает как бабочка, жалит как пчела!</p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="blank.html">Подробнее</a>
-            <table>
+          <div class="slide-description">
+            <p class="slide-slogan">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slide-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="btn" href="blank.html">Подробнее</a>
+            <table class="slide-features">
               <tr>
                 <td>800 м</td>
                 <td>50 м</td>
@@ -62,14 +62,14 @@
             </table>
           </div>
 
-          <div>
+          <div class="slide-image">
             <img src="img/slide_fit_band.png" width="345" height="485" alt="Фитнес-браслет.">
           </div>
-          <div>
-            <p>Худеем правильно!</p>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href="blank.html">Подробнее</a>
-            <table>
+          <div class="slide-description">
+            <p class="slide-slogan">Худеем правильно!</p>
+            <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="btn" href="blank.html">Подробнее</a>
+            <table class="slide-features">
               <tr>
                 <td>48 часов</td>
                 <td>без подзарядки</td>
@@ -77,14 +77,14 @@
             </table>
           </div>
 
-          <div>
+          <div class="slide-image">
             <img src="img/slide_selfie_stick.png" width="384" height="486" alt="Селфи-палка.">
           </div>
-          <div>
-            <p>Делай селфи, как Бен Стиллер!</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="blank.html">Подробнее</a>
-            <table>
+          <div class="slide-description">
+            <p class="slide-slogan">Делай селфи, как Бен Стиллер!</p>
+            <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="btn" href="blank.html">Подробнее</a>
+            <table class="slide-features">
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
@@ -97,9 +97,10 @@
               </tr>
             </table>
           </div>
+
         </div>
 
-        <div>
+        <div class="slider-pagination">
           <ul>
             <li>1</li>
             <li>2</li>
@@ -109,9 +110,9 @@
 
       </section>
 
-    <section>
-      <h2>Популярные товары</h2>
-      <ul>
+    <section class="popular">
+      <h2 class="hidden">Популярные товары</h2>
+      <ul class="popular-list">
         <li><a href="blank.html"><span>Виртуальная реальность</span></a></li>
         <li><a href="blank.html"><span>Моноподы для селфи</span></a></li>
         <li><a href="blank.html"><span>Экшн-камеры</span></a></li>
@@ -121,28 +122,28 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Услуги</h2>
-      <ul>
+    <section class="services">
+      <h2 class="hidden">Услуги</h2>
+      <ul class="services-list">
         <li><a href="blank.html">Доставка</a></li>
         <li><a href="blank.html">Гарантия</a></li>
         <li><a href="blank.html">Кредит</a></li>
       </ul>
-      <div>
-        <div>
-          <h3>Доставка</h3>
+      <div class="services-description">
+        <div class="service-description">
+          <h3 class="caption">Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </div>
-        <div>
-          <h3>Гарантия</h3>
+        <div class="service-description">
+          <h3 class="caption">Гарантия</h3>
           <p>
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
           </p>
         </div>
-        <div>
-          <h3>Кредит</h3>
+        <div class="service-description">
+          <h3 class="caption">Кредит</h3>
           <p>
             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
           </p>
@@ -150,8 +151,8 @@
       </div>
     </section>
 
-    <section>
-      <h2>Реализуемые бренды</h2>
+    <section class="brands">
+      <h2 class="hidden">Реализуемые бренды</h2>
       <ul>
         <li><a href="blank.html"><img src="img/logo_brands/logo_dji_gray.png" width="260" height="100" alt="DJI"></a></li>
         <li><a href="blank.html"><img src="img/logo_brands/logo_sp_gray.png" width="260" height="100" alt="SP Gadgets"></a></li>
@@ -160,9 +161,9 @@
       </ul>
     </section>
 
-    <div>
-      <section>
-        <h2>О нас</h2>
+    <div class="about_and_contacts">
+      <section class="about">
+        <h2 class="caption">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul>
@@ -174,7 +175,7 @@
       </section>
 
       <section>
-        <h2>Контакты</h2>
+        <h2 class="caption">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a href="blank.html"><img src="img/map_small.png" width="560" height="222" alt="Карта."></a>
         <a href="blank.html">Напишите нам</a>
@@ -184,7 +185,7 @@
     </main>
 
     <footer>
-      <div>
+      <div class="footer-top">
         <a><img src="img/logo_device_yellow.svg" width="163" height="35" alt="Логотип сайта Девайс."></a>
         <ul>
           <li><a href="blank.html">Войти</a></li>
@@ -192,7 +193,7 @@
           <li><a href="blank.html">Корзина</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-middle">
         <address>г. Москва, ул. Строителей, 15</address>
         <ul>
           <li><a href="blank.html">Доставка</a></li>
@@ -201,15 +202,15 @@
         </ul>
         <address><a href="tel:+74954959595">Тел: +7(495)495-95-95</a></address>
       </div>
-      <div>
+      <div class="footer-bottom">
         <span></span>
         <ul>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Fecebook"></a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Instagram"></a></li>
-          <li><a href="blank.html"><img src="https://via.placeholder.com/32x32" width="32" height="32" alt="Twitter"></a></li>
+          <li><a href="blank.html"><img src="img/svg_icons/icon_facebook.svg" width="32" height="32" alt="Fecebook"></a></li>
+          <li><a href="blank.html"><img src="img/svg_icons/icon_instagram.svg" width="32" height="32" alt="Instagram"></a></li>
+          <li><a href="blank.html"><img src="img/svg_icons/icon_twitter.svg" width="32" height="32" alt="Twitter"></a></li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy.">
+          <img src="img/svg_icons/logo_html.svg" width="27" height="34" alt="Логотип HTML Academy.">
         </a>
       </div>
     </footer>
