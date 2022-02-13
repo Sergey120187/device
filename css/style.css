@@ -1,0 +1,186 @@
+/* Fonts */
+
+ @font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  src:  local("Gilroy"),
+        url("/fonts/gilroyextrabold.woff2") format("woff2"),
+        url("/fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  src:  local("Gilroy"),
+        url("/fonts/gilroylight.woff2") format("woff2"),
+        url("/fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src:  local("OpenSans")
+        url("/fonts/opensans.woff2") format("woff2"),
+        url("/fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 300;
+  src:  local("OpenSans"),
+        url("/fonts/opensanslight.woff2") format("woff2"),
+        url("/fonts/opensanslight.woff") format("woff"); 
+} 
+
+/* Variables */
+
+:root {
+  --black: #00000;
+  --dark: #363636;
+  --grey: #464646;
+  --grey_half: #7e7e7e;
+  --grey_light: #e5e5e5;
+  --yellow_dark: #f0c52e;
+  --yellow: #f7e296;
+  --green: #91c92f;
+  --special: #f6dada;
+  --white: #ffffff;
+}
+
+/* Global */
+
+body{
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* Global class */
+
+.logo:hover,
+.main_header_top li:hover 
+ {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.index-caption {
+  font-size: 47px;
+  letter-spacing: 0.2em;
+}
+
+.index_text {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: var(--yellow_dark);
+}
+
+/* Header */
+
+.main_header {
+  background-color: var(--yellow);
+}
+
+.main_header_top, .main_navigation_catalog {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0em;
+}
+
+.main_navigation {
+  letter-spacing: 0.2em;
+}
+
+.main_header_search input[type="text"] {
+  background: var(--yellow);
+}
+
+/* Slider */
+
+.slide_slogan {
+  font-size: 47px;
+}
+
+.slide_table {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.slide_table_meaning {
+  font-size: 36px;
+}
+
+.slide_table_feature {
+  font-size: 13px;
+}
+
+/* Popular  */
+
+.popular {
+  letter-spacing: 0.05em;
+}
+
+/* Services */
+
+.services {
+  background-color: var(--grey_light);
+}
+
+.service_description p {
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+
+/* About and Contacts*/
+
+.about_and_contacts {
+  line-height: 28px;
+}
+
+.about ul {
+  font-size: 16px;
+}
+
+/* Footer */
+
+.main_footer {
+  background-color: var(--dark);
+  color: var(--white);
+  font-family: OpenSans, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.main_footer address {
+  font-style: normal;
+}
+
+.footer_top ul{
+  opacity: 0.7;
+}
+
+.footer_middle ul {
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+}
+
